@@ -1,0 +1,64 @@
+plugins {             
+    id 'java'
+}  
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+	// junit for test
+	implementation 'junit:junit:4.+'
+
+	// mariadb jdbc driver
+	implementation 'org.mariadb.jdbc:mariadb-java-client:2.+'
+	
+	// spring context and jdbc
+	implementation 'org.springframework:spring-context:5.+'
+	implementation 'org.springframework:spring-jdbc:5.+'
+	
+	// log4j 2	
+	implementation 'org.apache.logging.log4j:log4j-api:2.+'
+	implementation 'org.apache.logging.log4j:log4j-core:2.+'
+}
+
+task runExampleMain(type: JavaExec) {
+	main = 'com.taew.jdbc.example.ExampleMain'
+	classpath =  sourceSets.main.runtimeClasspath
+}
+
+
+task docs (dependsOn: javadoc, type: Copy) {
+	from 'build/docs/javadoc'
+	into 'docs'
+}
+
+task runNormalMain(type: JavaExec) {
+	main = 'com.taew.jdbc.chap02.NormalMain'
+	classpath =  sourceSets.main.runtimeClasspath
+}
+
+task runSpringMain(type: JavaExec) {
+	main = 'com.taew.jdbc.chap02.SpringMain'
+	classpath =  sourceSets.main.runtimeClasspath
+}
+
+task runMemberMain(type: JavaExec) {
+	main = 'com.taew.jdbc.chap03.MemberMain'
+	classpath =  sourceSets.main.runtimeClasspath
+}
+
+task runMemberMainUsingSpring(type: JavaExec) {
+	main = 'com.taew.jdbc.chap03.MemberMainUsingSpring'
+	classpath =  sourceSets.main.runtimeClasspath
+}
+
+task runMemberMainUsingComponentScan(type: JavaExec) {
+	main = 'com.taew.jdbc.chap04.MemberMainUsingComponentScan'
+	classpath =  sourceSets.main.runtimeClasspath
+}
+
+task runSpringJdbcMain (type: JavaExec) {
+	main = 'com.taewou.jdbc.spring.SpringJdbcMain'
+	classpath =  sourceSets.main.runtimeClasspath
+}
