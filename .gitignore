@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 .*
 !.gitignore
 bin/
 build/
 gradle
 gradlew*
+=======
+bin/
+build/
+.classpath
+.gradle/
+.project
+.settings/
+>>>>>>> 85397589173f0d14d4dc7e58bab9d4a04b3a1f92
 settings.gradle
