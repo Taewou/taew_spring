@@ -8,9 +8,9 @@ public class MemberMain {
 
 		// registerRequest 초기화
 		RegisterRequest req = new RegisterRequest();
-		req.setEmail("jacob@irafe.com");
+		req.setEmail("Taew@irafe.com");
 		req.setPassword("xxxx");
-		req.setName("Jacob");
+		req.setName("Taew");
 
 		// 회원 등록
 		regService.regist(req);
