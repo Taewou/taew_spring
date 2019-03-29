@@ -1,19 +1,12 @@
-<<<<<<< HEAD
 plugins {             
     id 'java'
 }  
-=======
-plugins {
-    id 'java'
-}
->>>>>>> 85397589173f0d14d4dc7e58bab9d4a04b3a1f92
 
 repositories {
     jcenter()
 }
 
 dependencies {
-<<<<<<< HEAD
 	// junit for test
 	implementation 'junit:junit:4.+'
 
@@ -66,6 +59,6 @@ task runMemberMainUsingComponentScan(type: JavaExec) {
 }
 
 task runSpringJdbcMain (type: JavaExec) {
-	main = 'com.taewou.jdbc.spring.SpringJdbcMain'
+	main = 'com.taew.jdbc.spring.SpringJdbcMain'
 	classpath =  sourceSets.main.runtimeClasspath
 }
