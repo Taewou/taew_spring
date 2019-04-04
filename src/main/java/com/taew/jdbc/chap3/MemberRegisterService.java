@@ -15,12 +15,12 @@ public class MemberRegisterService {
 
 	static Logger logger = LogManager.getLogger();
 
-	/**
+	/**blic MemberEs
 	 * memberDao를 초기화하는 컨스트럭터
 	 */
-	public MemberRegisterService(MemberDao memberDao) {
+	public void setMemberDao(MemberDao memberDao) {
 		this.memberDao = memberDao;
-	}
+	}	
 
 	/**
 	 * 회원 등록
@@ -36,7 +36,7 @@ public class MemberRegisterService {
 		if (member != null) {
 			throw new DuplicateMemberException("이메일 중복 " + req.getEmail());
 		}
-
+		
 		// 회원정보 저장
 		Member newMember = new Member(req.getEmail(), req.getPassword(),
 				req.getName());
