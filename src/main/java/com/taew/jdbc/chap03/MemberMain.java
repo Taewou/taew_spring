@@ -1,4 +1,4 @@
-package com.taew.jdbc.chap3;
+package com.taew.jdbc.chap03;
 
 public class MemberMain {
 

@@ -1,8 +1,10 @@
-package com.taew.jdbc.chap3;
-
+package com.taew.jdbc.chap04;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import com.taew.jdbc.chap03.Member;
+import org.springframework.stereotype.Repository;
 
 /**
  * p.62 [리스트 3.5] MemberDao 수정<br>
@@ -10,10 +12,11 @@ import java.util.Map;
  * 
  * @author Jacob
  */
+@Repository
 public class MemberDao {
 
 	/**
-	 *  회원정보 맵 (회원 테이블)
+	 * 회원정보 맵 (회원 테이블)
 	 */
 	Map<String, Member> map = new HashMap<>();
 

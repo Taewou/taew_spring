@@ -1,4 +1,4 @@
-package com.taew.jdbc.chap3;
+package com.taew.jdbc.chap03;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

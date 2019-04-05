@@ -1,4 +1,4 @@
-package com.taew.jdbc.chap3;
+package com.taew.jdbc.chap03;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
