@@ -1,6 +1,6 @@
 package com.taew.jdbc.chap04;
 
-import com.taew.jdbc.chap03.RegisterRequest;
+import com.taew.jdbc.chap03	.RegisterRequest;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
