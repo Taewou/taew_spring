@@ -2,10 +2,7 @@ package com.taew.jdbc.chap08_1;
 
 import java.util.List;
 
-import org.springframework.stereotype.Service;
-
 import com.taew.jdbc.chap03.Member;
-import org.springframework.stereotype.Repository;
 
 /**
  * p.184 [리스트 8.2] MemberDao 를 interface로 수정<br>
@@ -13,7 +10,6 @@ import org.springframework.stereotype.Repository;
  * 
  * @author Jacob
  */
-@Reposity
 public interface MemberDao {
 
 	/**
