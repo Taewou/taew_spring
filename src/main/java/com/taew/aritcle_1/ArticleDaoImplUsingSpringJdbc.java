@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
  * 
  * @author taew
  */
-@Repository("memberDao")
+@Repository("articleDao")
 public class ArticleDaoImplUsingSpringJdbc implements ArticleDao {
 	/**
 	 * 목록 가져오는 sql
